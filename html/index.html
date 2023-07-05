@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="../Style/output.css" />
+  </head>
+  <style>
+    body {
+      font-family: consolas;
+      background-color: #294c60;
+    }
+
+    #input,
+    #output {
+      width: 45%;
+    }
+    #input {
+      border: 3px solid black;
+    }
+    #output {
+      border: 3px solid white;
+    }
+    #sb_mark {
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+    #selected_number {
+      display: none;
+    }
+    #selected_number::-webkit-inner-spin-button,
+    #selected_number::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <header
+      class="bg-orange-500 h-14 grid place-items-center text-white text-4xl"
+    >
+      SB07
+    </header>
+
+    <div id="conatainer" class="flex justify-around flex-wrap mt-8">
+      <!--=============================================================================-->
+      <!--                              text input -->
+      <!--=============================================================================-->
+      <div id="input" class="h-56 flex justify-center rounded-lg bg-green-500">
+        <textarea
+          name=""
+          id="textarea_input"
+          class="resize-none outline-none boreder-none rounded-lg p-5"
+          placeholder="   text to input"
+          cols="62"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <!--=============================================================================-->
+      <!--                              text output -->
+      <!--=============================================================================-->
+      <div
+        id="output"
+        class="h-56 flex justify-center rounded-lg p-5 bg-black text-white"
+      ></div>
+
+      <!--=============================================================================-->
+      <!--                                 SB mark -->
+      <!--=============================================================================-->
+    </div>
+    <div
+      id="sb_mark"
+      class="w-20 h-20 grid place-items-center rounded-full m-auto mt-11 shadow-xl bg-orange-500"
+    >
+      sb
+      <input
+        type="number"
+        name=""
+        id="selected_number"
+        class="outline-none h-20 w-20 rounded-full absolute text-center"
+        max="26"
+      />
+    </div>
+    <!-- my script -->
+    <script src="../Javascript/main.js"></script>
+    <!-- bootstrap -->
+  </body>
+</html>
